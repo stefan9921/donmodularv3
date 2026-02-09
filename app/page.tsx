@@ -158,13 +158,14 @@ export default function Home() {
             initial="initial"
             whileInView="whileInView"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 gap-8"
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {[
               { src: '/images/bedroom-view.jpg', label: 'Spacious Bedroom' },
               { src: '/images/bathroom1.jpg', label: 'Modern Bathroom' },
               { src: '/images/living-area.jpg', label: 'Living Area' },
-              { src: '/images/bedroom-deck.jpg', label: 'Natural Light' }
+              { src: '/images/bedroom-deck.jpg', label: 'Natural Light' },
+              { src: '/images/kitchen.jpg', label: 'Premium Kitchen' }
             ].map((img, i) => (
               <motion.div
                 key={i}
