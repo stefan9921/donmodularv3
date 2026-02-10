@@ -487,6 +487,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Exterior Insulation */}
+      <section className="py-20 px-4 md:px-8 bg-gradient-to-b from-light to-white">
+        <div className="max-w-7xl mx-auto">
+          <motion.div {...fadeInUp} className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold text-dark mb-4">
+              Exterior Insulation System
+            </h2>
+            <p className="text-xl text-gray-600">
+              High‑performance wall panels showing structure, insulation and finish layers.
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            {[
+              { src: '/images/exterior-insulation-1.jpg', label: 'Wall panel cross‑section' },
+              { src: '/images/exterior-insulation-2.jpg', label: 'Portable sample panel' },
+              { src: '/images/exterior-insulation-3.jpg', label: 'Finish, frame and insulation' }
+            ].map((img, i) => (
+              <motion.div
+                key={i}
+                variants={fadeInUp}
+                className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl group"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.label}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white font-semibold text-lg translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  {img.label}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Partnership Opportunity */}
       <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
         <motion.div {...fadeInUp}>
