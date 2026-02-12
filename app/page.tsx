@@ -532,6 +532,34 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Assembly Steps */}
+      <section className="py-16 px-4 md:px-8 bg-black">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="whileInView"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-4 md:gap-8"
+          >
+            {['/images/assembly-1.jpg', '/images/assembly-2.jpg', '/images/assembly-3.jpg'].map((src, i) => (
+              <motion.div
+                key={i}
+                variants={fadeInUp}
+                className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl"
+              >
+                <Image
+                  src={src}
+                  alt=""
+                  fill
+                  className="object-cover"
+                />
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Partnership Opportunity */}
       <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
         <motion.div {...fadeInUp}>
