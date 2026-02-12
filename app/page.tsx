@@ -64,7 +64,7 @@ export default function Home() {
             className="flex flex-col md:flex-row gap-6 justify-center items-center mt-8"
           >
             <div className="bg-primary/90 backdrop-blur-sm px-12 py-8 rounded-lg shadow-2xl">
-              <div className="text-5xl md:text-6xl font-bold text-white mb-2" style={{ textShadow: '0 0 20px rgba(255, 255, 255, 0.6)' }}>€50,000</div>
+              <div className="text-5xl md:text-6xl font-bold text-white mb-2" style={{ textShadow: '0 0 20px rgba(255, 255, 255, 0.6)' }}><RETAIL></div>
               <div className="text-xl text-light">Retail Price</div>
             </div>
             
@@ -263,7 +263,7 @@ export default function Home() {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-primary text-center"
             >
-              <div className="text-5xl font-bold text-primary mb-2">€50,000</div>
+              <div className="text-5xl font-bold text-primary mb-2"><RETAIL></div>
               <div className="text-gray-600 mb-4">Retail Price</div>
               <div className="text-sm text-gray-500">VAT excluded • 25 sqm</div>
             </motion.div>
@@ -272,9 +272,9 @@ export default function Home() {
               variants={fadeInUp}
               className="bg-white p-8 rounded-2xl shadow-xl border-t-4 border-secondary text-center"
             >
-              <div className="text-5xl font-bold text-secondary mb-2">€21,500</div>
+              <div className="text-5xl font-bold text-secondary mb-2"><PROFIT></div>
               <div className="text-gray-600 mb-4">Profit per Unit</div>
-              <div className="text-sm text-gray-500">50/50 split • €10,750 each</div>
+              <div className="text-sm text-gray-500">50/50 split • <SHARE> each</div>
             </motion.div>
 
             <motion.div
@@ -339,13 +339,13 @@ export default function Home() {
 
             <div className="mt-8 grid md:grid-cols-2 gap-6">
               <div className="bg-gradient-to-br from-accent to-secondary p-8 rounded-xl text-white text-center">
-                <div className="text-4xl font-bold mb-2">€21,500</div>
+                <div className="text-4xl font-bold mb-2"><PROFIT></div>
                 <div className="text-lg mb-4">Profit per Unit</div>
                 <div className="text-sm opacity-90">Before 50/50 split</div>
               </div>
 
               <div className="bg-gradient-to-br from-primary to-secondary p-8 rounded-xl text-white text-center">
-                <div className="text-4xl font-bold mb-2">€10,750</div>
+                <div className="text-4xl font-bold mb-2"><SHARE></div>
                 <div className="text-lg mb-4">Your Share per Unit</div>
                 <div className="text-sm opacity-90">50/50 partnership split</div>
               </div>
@@ -376,16 +376,16 @@ export default function Home() {
                 <div className="space-y-3 text-white">
                   <div className="flex justify-between text-lg">
                     <span>Total Revenue:</span>
-                    <span className="font-bold">€2,500,000</span>
+                    <span className="font-bold"><REV50></span>
                   </div>
                   <div className="flex justify-between text-lg">
                     <span>Total Profit:</span>
-                    <span className="font-bold">€1,075,000</span>
+                    <span className="font-bold"><PROF50></span>
                   </div>
                   <div className="border-t-2 border-white/30 pt-3 mt-3">
                     <div className="flex justify-between text-2xl">
                       <span className="font-bold">Your Share:</span>
-                      <span className="font-bold text-accent">€537,500</span>
+                      <span className="font-bold text-accent"><SHARE50></span>
                     </div>
                   </div>
                 </div>
@@ -399,16 +399,16 @@ export default function Home() {
                 <div className="space-y-3 text-white">
                   <div className="flex justify-between text-lg">
                     <span>Total Revenue:</span>
-                    <span className="font-bold">€3,500,000</span>
+                    <span className="font-bold"><REV70></span>
                   </div>
                   <div className="flex justify-between text-lg">
                     <span>Total Profit:</span>
-                    <span className="font-bold">€1,505,000</span>
+                    <span className="font-bold"><PROF70></span>
                   </div>
                   <div className="border-t-2 border-white/30 pt-3 mt-3">
                     <div className="flex justify-between text-2xl">
                       <span className="font-bold">Your Share:</span>
-                      <span className="font-bold text-accent">€752,500</span>
+                      <span className="font-bold text-accent"><SHARE70></span>
                     </div>
                   </div>
                 </div>
